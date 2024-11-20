@@ -23,37 +23,33 @@ Ultimately, the goal is to provide BoomBikes with a data-driven approach to bett
 
 ## Conclusions
 The features used in the prediction of the target variable cnt (bike bookings) are:
-'temp' (temperature)
-'yr' (year)
-'windspeed'
-'workingday'
-'weekday_6'
-'season_2' (summer)
-'weathersit_2' (Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist)
-'season_4' (winter)
-'mnth_9' (September)
-'weathersit_3' (Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds)
+- 'temp' (temperature)
+- 'yr' (year)
+- 'windspeed'
+- 'workingday'
+- 'weekday_6'
+- 'season_2' (summer)
+- 'weathersit_2' (Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist)
+- 'season_4' (winter)
+- 'mnth_9' (September)
+- 'weathersit_3' (Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds)
+
 As per the absolute values of the coefficients or weights of the linear regression model, the top 3 features contributing significantly towards the demand of shared bikes are as follows:
-temp : A one-unit increase in temp leads to 0.5232 increase in bike bookings. This suggests that warmer weather significantly drives bike demand.
+- temp : A one-unit increase in temp leads to 0.5232 increase in bike bookings. This suggests that warmer weather significantly drives bike demand.
 
-yr : A unit increase in yr variable increases the bike hirings by 0.2315 units. This reflects a rising trend in demand over time, indicating business growth.
+- yr : A unit increase in yr variable increases the bike hirings by 0.2315 units. This reflects a rising trend in demand over time, indicating business growth.
 
-weathersit_3 : A unit increase in weathersit_3 which indicates light snow/rain/thunderstorm decreases bike bookings by 0.2742 units. This indicates that adverse weather conditions negatively impact bike demand.
+- weathersit_3 : A unit increase in weathersit_3 which indicates light snow/rain/thunderstorm decreases bike bookings by 0.2742 units. This indicates that adverse weather conditions negatively impact bike demand.
 The analysis reveals that bike demand is positively influenced by warmer temperatures and an increasing trend over the years, while adverse weather conditions (snow/rain/thunderstorm) tend to decrease bike bookings.
 
 Season details:
-
-season_2 - summer
-
-season_3 - fall
-
-season_4 - winter
+- season_2 - summer
+- season_3 - fall
+- season_4 - winter
 
 Weather details:
-
-weathersit_2 - Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
-
-weathersit_3 - Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
+- weathersit_2 - Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
+- weathersit_3 - Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
 
 
 
